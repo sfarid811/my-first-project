@@ -1,0 +1,9 @@
+<div class="card">
+    <img [src]="product.imgUrl" [alt]="product.title" />
+    <div class="content">
+        <h1 monSurlignage class="card_title">{{ product.title }}</h1>
+        <p class="card_description">{{ product.description }}</p>
+        <span class="price">Price : {{ product.price }} $</span>
+        <span class="delete" (click)="onDelete(product)">Delete</span>
+    </div>
+</div>
